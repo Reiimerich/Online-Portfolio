@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Manuel Bermudez Gomez - Videogame Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Custom styles for Lucid Icons (if needed, otherwise Tailwind handles most) */
+        .lucide {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-100 to-pink-100 text-gray-800 p-4 sm:p-8">
+
+    <div id="root"></div>
+
+    <script>
+        // Data for the resume sections
+        const resumeData = {
+            home: {
+                name: 'Jose Manuel Bermudez Gomez',
+                title: 'Unity Developer',
+                picture: 'https://media.licdn.com/dms/image/v2/D4E03AQEA5KyLJsp7qg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667059801731?e=1753920000&v=beta&t=1WlcvQQgq_5HSQpsiKdxe9SBLmjN1Ml0lv69IexNYr0',
+                about: `Game Developer with a strong passion for crafting high-quality interactive experiences, specializing in video game development and XR (AR & VR) projects. Proven expertise in designing and implementing engaging gameplay mechanics, intuitive UI systems, and immersive storytelling. Known for combining creativity with solid technical skills to deliver polished and memorable gaming experiences. Detail-oriented, with strong problem-solving abilities and a deep commitment to the gaming industry. A team player with excellent communication skills, driven, self-motivated, and always eager to bring ideas and concepts to life through interactive entertainment.`,
+                contact: {
+                    email: 'josephbermudez1337@gmail.com',
+                    linkedin: 'https://www.linkedin.com/in/josephbermudezg/',
+                },
+            },
+            experience: [
+                {
+                    title: 'Game Developer',
+                    company: 'Hexfork, London, United Kingdom',
+                    duration: 'May 2023 - March 2024',
+                    description: [
+                        'Managed multiple teams in different timezones to develop projects following clients ideas, guided and trained 8 developers, as well as managing recruitment for new interns.',
+                        'Responsible for creating documentation and for 15 developers, as well as supporting the interview of 7 prospects for the company.',
+                        'Organized weekly meetings with 4 different teams to keep track of projects and helping reduce blockers improving deadlines in 23%.',
+                        'Created 4 design documents for clients based on meetings and follow up meetings to help with the creation of projects.',
+                        'Designed a ticket system using managing tools to follow track of tasks, sprints and deadlines.',
+                    ],
+                },
+                {
+                    title: 'Game Developer',
+                    company: 'Vibing Studios, San Luis Potosi, Mexico',
+                    duration: 'May 2022 - April 2023',
+                    description: [
+                        'Developed and refined game mechanics for 5+ projects, ensuring alignment with project vision and goals.',
+                        'Collaborated with 3 cross-functional teams to execute level designs with high quality and consistency, contributing to 10+ successful level implementations.',
+                        'Analyzed player data and feedback from over 100 playtesting sessions to inform game design decisions and improve player engagement, leading to a 15% increase in player retention.',
+                        'Planned and executed over 20 playtesting sessions, gathering feedback and making iterative improvements to level designs, resulting in significantly improved user experience.',
+                    ],
+                },
+                {
+                    title: 'Unity Developer',
+                    company: 'Fyware, San Luis Potosi, Mexico',
+                    duration: 'August 2021 - April 2022',
+                    description: [
+                        'Coordinated with project stakeholders to define demo objectives, ensuring alignment with project milestones and client priorities.',
+                        'Created 7 functional demos for clients, considering usability, functionability, and performance.',
+                        'Led early playtesting efforts to identify and address potential VR-specific issues reducing performance issues in 67%.',
+                        'Researched for Assets free of use for the company, reducing the budget needed for the project in 45%.',
+                    ],
+                },
+            ],
+            education: [
+                {
+                    degree: 'Bachelor\'s Degree',
+                    university: 'UNIAT, San Luis Potosi, San Luis Potosi',
+                    year: '2018 - 2022',
+                },
+            ],
+            certifications: [
+                {
+                    name: 'C# Class Development',
+                    issuer: 'Coursera',
+                    year: '2025',
+                    link: 'https://www.coursera.org/account/accomplishments/verify/073HRJ7QDLC5'
+                },
+                {
+                    name: 'C# Basics and .Net',
+                    issuer: 'Coursera',
+                    year: '2025',
+                    link: 'https://www.coursera.org/account/accomplishments/verify/1PPBYLLKCKB0'
+                },
+                {
+                    name: 'Designing User Interfaces and Experiences (UI/UX)',
+                    issuer: 'Coursera',
+                    year: '2025',
+                    link: 'https://www.coursera.org/account/accomplishments/verify/8I01DLZVXVSA'
+                },
+                {
+                    name: 'Introduction to Software Engineering',
+                    issuer: 'Coursera',
+                    year: '2025',
+                    link: 'https://www.coursera.org/account/accomplishments/verify/O4NY85XYB8ND'
+                },
+            ],
+            skills: {
+                technicalSkills: [
+                    'C#',
+                    'Unity',
+                    'Unreal Engine',
+                    'FrontEnd Development',
+                    'Game Development',
+                    '3D Development',
+                ],
+                coreCompetencies: [
+                    'Project Planning and Execution',
+                    'Team Leadership and Collaboration',
+                    'Problem-Solving',
+                    'Quality Assurance and Testing',
+                    'Communication and Stakeholder Management',
+                ],
+                programmingLanguages: [],
+                frontend: [],
+                backend: [],
+                databases: [],
+                tools: [],
+            },
+            languages: [
+                {
+                    name: 'English',
+                    level: 'C2',
+                    description: 'Able to work and speak English in a professional environment.',
+                },
+                {
+                    name: 'Japanese',
+                    level: 'A1-1',
+                    description: 'Currently learning in Marugoto.',
+                },
+            ],
+            hobbies: [
+                'Play Rhythm, MMO and Gacha Games',
+                'Listening to Music',
+                'Hololive',
+                'Playing with my cat',
+            ],
+            projects: [
+                {
+                     name: 'Bitmon Adventures',
+                    type: 'youtube',
+                    url: 'https://www.youtube.com/embed/mOnezE74fx8?si=dnFb17Wd9-fUNKUs',
+                    description: 'Bitmon Adventures is a decentralized, community-driven NFT game focused on monsters. Players can engage in activities such as playing, breeding, trading, and fighting with these digital creatures.',
+                    myInvolvement: 'I was in charge to analyze player data and feedback from over 100 playtesting sessions to inform game designers decisions and improve player engagement, collaborated with multiple cross-functional teams to execute high quality level design implementing 10 levels into the game and developed and refined game mechanics, User Interfaces and Player Input',
+                },
+                {
+                    name: 'VR Escape Room',
+                    type: 'youtube',
+                    url: 'https://www.youtube.com/embed/XapHkSAJ8AE?si=XAFyXp_TPDB2GLY0',
+                    description: 'VR Multiplayer project created to improve Team Building solving puzzles and going through multiple levels',
+                    myInvolvement: 'Independently developed the Unity Demo EscapeRoomVR project as a personal study into Unitys capabilities for VR development. This involved solo design and implementation of core mechanics such as player movement and interaction in a virtual environment, puzzle design, and UI elements for a VR escape room experience.',
+                },
+                {
+                    name: 'Space Shooter',
+                    type: 'webgl',
+                    url: 'https://reiiimer.itch.io/space-shooter',
+                    description: 'A classic 2D space shooter game developed with Unity.',
+                    myInvolvement: 'Designed core gameplay mechanics, implemented enemy AI, and managed level progression. Focused on creating an engaging and challenging player experience.',
+},
+                {
+                    name: 'Reverse Pacman',
+                    type: 'youtube',
+                    url: 'https://www.youtube.com/embed/Cfzz3qfwdp0?si=DcLdR2VWooFdgyM3&amp;start=5393',
+                    description: '2D platform in a 3D environment where players need to play as the ghosts and escape from Pacman. Solo player Arcade game where they need to gather power ups to defeat them.',
+                    myInvolvement: 'Drove the development of this project, crafting and integrating all primary mechanics, including fluid player movement, strategic level design, impactful power-ups, challenging enemy AI, and responsive UI elements, ensuring a cohesive and engaging player experience.',
+                },
+                {
+                    name: 'Kings Tower',
+                    type: 'youtube',
+                    url: 'https://www.youtube.com/embed/iHcBuKCpWFg?si=-Agl_R3qD_AByd9x',
+                    description: 'Prototype created using PaperZD Plugin and Blueprints, introduces different game mechanics as 1 way platforms, buffer on jump time, more animations for player and AI, effects and sounds on death and when you walk, springs to access different areas and be able to jump mid air a short time after dropping from a ledge.',
+                    myInvolvement: 'Independently developed the Unreal Engine 5 - Kings Tower demo as a personal study into Unreal Engine 5s capabilities. This involved solo design and implementation of core mechanics such as character movement, platforming, environmental layouts, and basic enemy AI within a pixel-art style side-scrolling environment.',
+                },
+                {
+                    name: 'Retro Track Race',
+                    type: 'youtube',
+                    url: 'https://www.youtube.com/embed/Wgdp3TZcps4?si=bC5bKuJ3GipO0qI9',
+                    description: 'Prototype created using PaperZD to research old retro game mechancis such as a basic AI to run side by side of the player',
+                    myInvolvement: 'Independently developed the Unreal Engine 5 Retro Track Race demo as a personal study into Unreal Engine 5s capabilities. This involved solo design and implementation of core mechanics such as character movement, track design, and basic AI for a side-scrolling pixel-art racing game.',
+                },
+                {
+                    name: 'Solar System Visualizer',
+                    type: 'webgl',
+                    url: 'https://reiiimer.itch.io/solar-system-visualizer',
+                    description: 'An interactive visualization of the solar system, allowing users to explore planets and their orbits.',
+                    myInvolvement: 'Developed the 3D rendering pipeline and implemented orbital mechanics for accurate planet movement. Focused on creating an educational and visually appealing experience.'
+                },
+            ],
+        };
+
+        // Function to render the content based on active tab
+        function renderContent(activeTab) {
+            const root = document.getElementById('root');
+            let contentHtml = '';
+
+            // Header and Navigation
+            contentHtml += `
+                <header class="bg-white p-4 rounded-xl shadow-lg mb-8 flex flex-col sm:flex-row justify-between items-center">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-800 mb-1">Jose Manuel Bermudez Gomez</h1>
+                        <p class="text-sm text-gray-600">Videogame Developer</p>
+                    </div>
+                    <nav class="flex flex-wrap gap-2 sm:gap-4">
+                        <button id="home-tab-btn" class="px-4 py-2 rounded-lg transition-all duration-300 ${activeTab === 'home' ? 'bg-indigo-500 text-white shadow-md' : 'bg-gray-200 text-gray-700 hover:bg-indigo-300 hover:text-white'}">
+                            Home
+                        </button>
+                        <button id="experience-tab-btn" class="px-4 py-2 rounded-lg transition-all duration-300 ${activeTab === 'experience' ? 'bg-indigo-500 text-white shadow-md' : 'bg-gray-200 text-gray-700 hover:bg-indigo-300 hover:text-white'}">
+                            Experience & Skills
+                        </button>
+                        <button id="projects-tab-btn" class="px-4 py-2 rounded-lg transition-all duration-300 ${activeTab === 'projects' ? 'bg-indigo-500 text-white shadow-md' : 'bg-gray-200 text-gray-700 hover:bg-indigo-300 hover:text-white'}">
+                            Projects
+                        </button>
+                    </nav>
+                </header>
+            `;
+
+            // Main Content Area
+            contentHtml += '<main class="container mx-auto">';
+
+            // Home Tab Content
+            if (activeTab === 'home') {
+                contentHtml += `
+                    <section class="bg-white p-6 rounded-xl shadow-lg flex flex-col md:flex-row items-center md:items-start gap-6 transition-all duration-1000 ease-out opacity-100 translate-y-0">
+                        <img
+                            src="${resumeData.home.picture}"
+                            alt="Your Photo"
+                            class="w-48 h-48 rounded-full object-cover border-4 border-indigo-400 shadow-md"
+                        />
+                        <div class="text-center md:text-left">
+                            <h2 class="text-4xl font-bold text-indigo-600 mb-2">${resumeData.home.name}</h2>
+                            <p class="text-xl text-gray-600 mb-4">${resumeData.home.title}</p>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-6">${resumeData.home.about}</p>
+                            <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 text-gray-600">
+                                <a href="mailto:${resumeData.home.contact.email}" class="flex items-center gap-2 hover:text-indigo-500 transition-colors duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    ${resumeData.home.contact.email}
+                                </a>
+                                <a href="${resumeData.home.contact.linkedin}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-indigo-500 transition-colors duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                `;
+            }
+
+            // Experience & Skills Tab Content
+            if (activeTab === 'experience') {
+                contentHtml += `
+                    <section class="bg-white p-6 rounded-xl shadow-lg transition-all duration-1000 ease-out opacity-100 translate-y-0">
+                        <h2 class="text-3xl font-bold text-indigo-600 mb-6 text-center">Experience & Skills</h2>
+
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-indigo-700 mb-4 border-b border-gray-300 pb-2">Experience</h3>
+                            ${resumeData.experience.map(job => `
+                                <div class="mb-6 bg-indigo-50 p-4 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold text-indigo-500">${job.title}</h4>
+                                    <p class="text-gray-600">${job.company} | ${job.duration}</p>
+                                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                                        ${job.description.map(point => `<li>${point}</li>`).join('')}
+                                    </ul>
+                                </div>
+                            `).join('')}
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-indigo-700 mb-4 border-b border-gray-300 pb-2">Education</h3>
+                            ${resumeData.education.map(edu => `
+                                <div class="mb-4 bg-indigo-50 p-4 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold text-indigo-500">${edu.degree}</h4>
+                                    <p class="text-gray-600">${edu.university} | ${edu.year}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-indigo-700 mb-4 border-b border-gray-300 pb-2">Certifications</h3>
+                            ${resumeData.certifications.map(cert => `
+                                <div class="mb-4 bg-indigo-50 p-4 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold text-indigo-500">${cert.name}</h4>
+                                    <p class="text-gray-600">${cert.issuer} | ${cert.year}</p>
+                                    ${cert.link ? `<a href="${cert.link}" target="_blank" rel="noopener noreferrer" class="text-indigo-500 hover:underline text-sm mt-1 inline-block">View Credential</a>` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-indigo-700 mb-4 border-b border-gray-300 pb-2">Skills</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                ${resumeData.skills.technicalSkills.length > 0 ? `
+                                    <div class="bg-indigo-50 p-4 rounded-lg shadow-md">
+                                        <h4 class="text-lg font-bold text-indigo-500 mb-2">Technical Skills</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            ${resumeData.skills.technicalSkills.map(skill => `
+                                                <span class="bg-indigo-400 text-white text-sm px-3 py-1 rounded-full shadow-sm">
+                                                    ${skill}
+                                                </span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+                                ${resumeData.skills.coreCompetencies.length > 0 ? `
+                                    <div class="bg-indigo-50 p-4 rounded-lg shadow-md">
+                                        <h4 class="text-lg font-bold text-indigo-500 mb-2">Core Competencies</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            ${resumeData.skills.coreCompetencies.map(skill => `
+                                                <span class="bg-indigo-400 text-white text-sm px-3 py-1 rounded-full shadow-sm">
+                                                    ${skill}
+                                                </span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-indigo-700 mb-4 border-b border-gray-300 pb-2">Languages</h3>
+                            ${resumeData.languages.map(lang => `
+                                <div class="mb-4 bg-indigo-50 p-4 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold text-indigo-500">${lang.name}</h4>
+                                    <p class="text-gray-600">Level: ${lang.level}</p>
+                                    <p class="text-gray-700">${lang.description}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold text-indigo-700 mb-4 border-b border-gray-300 pb-2">Hobbies</h3>
+                            <div class="bg-indigo-50 p-4 rounded-lg shadow-md">
+                                <ul class="list-disc list-inside text-gray-700">
+                                    ${resumeData.hobbies.map(hobby => `<li>${hobby}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                `;
+            }
+
+            // Projects Tab Content
+            if (activeTab === 'projects') {
+                contentHtml += `
+                    <section class="bg-white p-6 rounded-xl shadow-lg">
+                        <h2 class="text-3xl font-bold text-indigo-600 mb-6 text-center">My Projects</h2>
+                        <div class="space-y-12">
+                            ${resumeData.projects.map((project, index) => {
+                                const isItchIoProject = project.url.includes('itch.io');
+                                const isEven = index % 2 === 0;
+                                return `
+                                    <div class="flex flex-col md:flex-row gap-6 p-6 rounded-lg shadow-md bg-indigo-50 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}">
+                                        <div class="flex-1 text-gray-700">
+                                            <h3 class="text-2xl font-semibold text-indigo-700 mb-3">${project.name}</h3>
+                                            <p class="text-lg mb-4">
+                                                <span class="font-bold text-indigo-600">Description:</span> ${project.description}
+                                            </p>
+                                            <p class="text-lg">
+                                                <span class="font-bold text-indigo-600">Role & Contributions:</span> ${project.myInvolvement}
+                                            </p>
+                                        </div>
+                                        <div class="flex-1 flex items-center justify-center min-h-[200px] md:min-h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-inner">
+                                            ${isItchIoProject ? `
+                                                <div class="flex flex-col items-center justify-center p-4 text-center">
+                                                    <p class="text-gray-700 text-lg mb-4">
+                                                        This project is hosted on itch.io and cannot be embedded directly due to security policies.
+                                                    </p>
+                                                    <a
+                                                        href="${project.url}"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                                                    >
+                                                        Play on itch.io
+                                                    </a>
+                                                </div>
+                                            ` : `
+                                                <iframe
+                                                    src="${project.url}"
+                                                    title="${project.name}"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    referrerPolicy="strict-origin-when-cross-origin"
+                                                    allowFullScreen
+                                                    class="w-full h-full border-0 rounded-lg"
+                                                ></iframe>
+                                            `}
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </section>
+                `;
+            }
+
+            contentHtml += '</main>';
+
+            // Footer
+            contentHtml += `
+                <footer class="mt-8 text-center text-gray-500 text-sm">
+                    <p>© ${new Date().getFullYear()} Jose Manuel Bermudez Gomez. All rights reserved.</p>
+                </footer>
+            `;
+
+            root.innerHTML = contentHtml;
+
+            // Add event listeners after content is rendered
+            document.getElementById('home-tab-btn').addEventListener('click', () => renderContent('home'));
+            document.getElementById('experience-tab-btn').addEventListener('click', () => renderContent('experience'));
+            document.getElementById('projects-tab-btn').addEventListener('click', () => renderContent('projects'));
+        }
+
+        // Initial render on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderContent('home'); // Start with the home tab active
+        });
+    </script>
+</body>
+</html>

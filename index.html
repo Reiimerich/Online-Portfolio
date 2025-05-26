@@ -337,6 +337,42 @@
                                         </div>
                                     </div>
                                 ` : ''}
+                                ${resumeData.skills.programmingLanguages.length > 0 ? `
+                                    <div class="bg-indigo-50 p-4 rounded-lg shadow-md">
+                                        <h4 class="text-lg font-bold text-indigo-500 mb-2">Core Competencies</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            ${resumeData.skills.programmingLanguages.map(skill => `
+                                                <span class="bg-indigo-400 text-white text-sm px-3 py-1 rounded-full shadow-sm">
+                                                    ${skill}
+                                                </span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+                                ${resumeData.skills.frontend.length > 0 ? `
+                                    <div class="bg-indigo-50 p-4 rounded-lg shadow-md">
+                                        <h4 class="text-lg font-bold text-indigo-500 mb-2">Core Competencies</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            ${resumeData.skills.frontend.map(skill => `
+                                                <span class="bg-indigo-400 text-white text-sm px-3 py-1 rounded-full shadow-sm">
+                                                    ${skill}
+                                                </span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+                                ${resumeData.skills.tools.length > 0 ? `
+                                    <div class="bg-indigo-50 p-4 rounded-lg shadow-md">
+                                        <h4 class="text-lg font-bold text-indigo-500 mb-2">Core Competencies</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            ${resumeData.skills.tools.map(skill => `
+                                                <span class="bg-indigo-400 text-white text-sm px-3 py-1 rounded-full shadow-sm">
+                                                    ${skill}
+                                                </span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
                             </div>
                         </div>
 
